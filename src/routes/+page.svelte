@@ -1,5 +1,6 @@
 <script>
 let count = $state(0);
+let doubled = $derived(count * 2);
     console.log('Hello World');
 </script>
 
@@ -10,6 +11,9 @@ let count = $state(0);
     Clicks: {count}
 </button>
 
+<span>
+doubled: {doubled}
+</span>
 <style>
 	h1 {
 		color: deepskyblue;
